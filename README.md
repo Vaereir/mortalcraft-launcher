@@ -32,3 +32,9 @@ Always start the game with the launcher. It keeps your files up to date and poin
 - "The Wow.exe in that folder isn't the original": the launcher only works with an unchanged 3.3.5a `Wow.exe`.
 - Anything else: the launcher writes what it did to `%AppData%\Mortalcraft\launcher.log`. Send that file to
   whoever invited you.
+- The game looks wrong or won't start with the Vulkan renderer (DXVK) on: turn it off on the Settings page.
+
+## Credits
+
+The optional Vulkan renderer is [DXVK](https://github.com/doitsujin/dxvk) by Philip Rebohle and its contributors,
+shipped unchanged under its zlib licence (`dxvk-LICENSE.txt` in each release).
