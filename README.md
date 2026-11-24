@@ -18,6 +18,27 @@ Mortalcraft is a World of Warcraft 3.3.5a server that is being tested. You can o
 
 Always start the game with the launcher. It keeps your files up to date and points the game at the server.
 
+## On Linux
+
+The game is a Windows program, so on Linux it runs through Wine. The Linux launcher does everything the Windows one
+does and starts the game through Wine for you.
+
+1. Install Wine and the web view the launcher's window needs, from your system's software store or with one of
+   these commands in a terminal:
+   - Ubuntu, Linux Mint, Pop!_OS, Debian: `sudo dpkg --add-architecture i386 && sudo apt update && sudo apt install wine wine32 libwebkit2gtk-4.1-0`
+   - Fedora: `sudo dnf install wine webkit2gtk4.1`
+   - Arch, Manjaro, SteamOS desktop: `sudo pacman -S wine webkit2gtk-4.1`
+2. Download `Mortalcraft-Launcher-Linux` from the [latest release](../../releases/latest) and put it in your game
+   folder, next to `Wow.exe`.
+3. Let it run as a program: right-click it, open Properties, and on the Permissions tab tick "Allow executing file
+   as program" (or, in a terminal in that folder: `chmod +x Mortalcraft-Launcher-Linux`).
+4. Start it (double-click it, or `./Mortalcraft-Launcher-Linux` in a terminal). From then on it is in your
+   applications menu as Mortalcraft.
+
+If you run Wine some other way (a Flatpak Wine, your own Wine prefix), say so on the launcher's Settings page. The
+launcher writes what it did to `~/.config/Mortalcraft/launcher.log`. It needs a system from 2022 or newer (Ubuntu
+22.04, Fedora 36, Debian 12 or later).
+
 ## Good to know
 
 - This is a test server. It can restart at any moment, and things change often.
@@ -32,6 +53,7 @@ Always start the game with the launcher. It keeps your files up to date and poin
 - "The Wow.exe in that folder isn't the original": the launcher only works with an unchanged 3.3.5a `Wow.exe`.
 - Anything else: the launcher writes what it did to `%AppData%\Mortalcraft\launcher.log`. Send that file to
   whoever invited you.
+  On Linux it is `~/.config/Mortalcraft/launcher.log`.
 - The game looks wrong or won't start with the Vulkan renderer (DXVK) on: turn it off on the Settings page.
 
 ## Credits
