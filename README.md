@@ -55,8 +55,14 @@ launcher writes what it did to `~/.config/Mortalcraft/launcher.log`. It needs a 
   whoever invited you.
   On Linux it is `~/.config/Mortalcraft/launcher.log`.
 - The game looks wrong or won't start with the Vulkan renderer (DXVK) on: turn it off on the Settings page.
+- The game is slow, looks wrong or won't start with Lumenveil on: turn it off on the Settings page, or press Ctrl+F12
+  in the game to see it without. Its own log, `CoAVolFog.log` beside the game, goes into Report a problem.
 
 ## Credits
 
 The optional Vulkan renderer is [DXVK](https://github.com/doitsujin/dxvk) by Philip Rebohle and its contributors,
 shipped unchanged under its zlib licence (`dxvk-LICENSE.txt` in each release).
+
+The optional fog, light and water are [Lumenveil](https://github.com/lumenveil/Lumenveil), free software under the GPL
+2.0 by its own authors. Mortalcraft doesn't hand it out: when you turn it on, the launcher downloads its official
+release from Lumenveil's own page and checks it against the hash in Mortalcraft's signed list.
