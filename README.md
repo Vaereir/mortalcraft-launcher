@@ -55,7 +55,7 @@ launcher writes what it did to `~/.config/Mortalcraft/launcher.log`. It needs a 
   whoever invited you.
   On Linux it is `~/.config/Mortalcraft/launcher.log`.
 - The game looks wrong or won't start with the Vulkan renderer (DXVK) on: turn it off on the Settings page.
-- The game is slow, looks wrong or won't start with Lumenveil on: turn it off on the Settings page, or press Ctrl+F12
+- The game is slow, looks wrong or won't start with Lumenveil on: turn it off on the Settings page, or press Ctrl+Shift+F
   in the game to see it without. Its own log, `CoAVolFog.log` beside the game, goes into Report a problem.
 
 ## Credits
